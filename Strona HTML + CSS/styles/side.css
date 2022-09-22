@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header>h3{
+    margin-left: 15%;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 25%;
+    position: fixed;
+}
+
+.contacts{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: aliceblue;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-right-style: solid;
+    border-right-color: black;
+}
+
+.contents{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: aliceblue;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    letter-spacing: 2px;
+    text-transform: none;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+@media screen and (max-width: 1024px){
+    section{
+        margin-top: 40%;
+    }
+}
+

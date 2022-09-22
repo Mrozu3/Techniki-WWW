@@ -1,0 +1,47 @@
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: aliceblue;
+    font-family: 'Arial', fantasy;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    color:aliceblue;
+}
+
+#respon {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+figure{
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px){
+    #main {
+        display: none;
+    }
+
+    #respon {
+        display: flex;
+    }
+}

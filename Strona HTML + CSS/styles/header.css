@@ -1,0 +1,97 @@
+#topbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    opacity: 95%;
+}
+
+h1{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 11%;
+    color: aliceblue;
+}
+
+h1:hover{
+    color: rgba(255,255,255,0.8);
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+
+header>h3{
+    display: block;
+    margin-top: 0;
+    margin-left: 15%;
+    color: aliceblue;
+
+}
+
+nav>li{
+    position: absolute;
+    right: 11%;
+    background-color: rgba(0,0,0,0.9);
+    list-style-type:none;
+}
+
+li>a:link{
+    display: block;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+    line-height: 300%;
+}
+
+li>a:hover{
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+nav>li>ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:none;
+}
+
+nav>li:hover>ul{
+    display:block;
+}
+
+img[alt="Menu"] {
+    display: block;
+    margin: 10% auto;
+    width: 30%;
+    height: 30%;
+}
+
+@media screen and (max-height: 320px){
+    li>a:link{
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header > h3 {
+        font-size: 70%;
+    }
+
+    img[alt="Menu"] {
+        margin: 10% auto;
+        right: 0;
+        width: 20%;
+        height: 20%;
+    }
+    nav>li{
+        right: 0;
+    }
+
+    li>a:link{
+        font-size: large;
+        text-align: center;
+        color: aliceblue;
+    }
+}
