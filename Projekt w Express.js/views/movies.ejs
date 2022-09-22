@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>
+        Domowa baza filmowa
+    </title>
+    <script src="javascripts/main.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<div id="background">
+
+    <h1> Domowa Baza Filmowa</h1>
+
+    <div id="marginboxes">
+
+        <form action="" method="post">
+            <label>
+                <input class="textfield" placeholder="" name="findby">
+            </label>
+            <input class="movebuttons" type="submit" value="Wyszukaj">
+        </form>
+
+    </div>
+
+    <div id="addbutton">
+        <a class="movebuttons" href="/movieadd">Dodaj film</a>
+    </div>
+
+
+    <table id="moviestable">
+
+        <tr>
+            <th> Okładka</th>
+            <th> Tytuł
+                <form action="" method="get">
+                    <button class="tablebuttons" type="submit" name="order" value="titledesc">⇧</button>
+                    <button class="tablebuttons" type="submit" name="order" value="titleasc">⇩</button>
+                </form>
+            </th>
+            <th> Opis</th>
+            <th> Gatunek
+                <form action="" method="get">
+                    <button class="tablebuttons" type="submit" name="order" value="genredesc">⇧</button>
+                    <button class="tablebuttons" type="submit" name="order" value="genreasc">⇩</button>
+                </form>
+            </th>
+            <th> Czas trwania
+                <form action="" method="get">
+                    <button class="tablebuttons" type="submit" name="order" value="runtimedesc">⇧</button>
+                    <button class="tablebuttons" type="submit" name="order" value="runtimeasc">⇩</button>
+                </form>
+            </th>
+            <th> Rok produkcji
+                <form action="" method="get">
+                    <button class="tablebuttons" type="submit" name="order" value="yeardesc">⇧</button>
+                    <button class="tablebuttons" type="submit" name="order" value="yearasc">⇩</button>
+                </form>
+            </th>
+            <th></th>
+            <th></th>
+
+        </tr>
+        <% if(dane.length > 0){ %>
+            <% dane.forEach(function(row){ %>
+                <tr data-id="<%= row.id %>">
+                    <td><img src="<%= row.Cover %>" alt="<%= row.Cover %>"></td>
+                    <td><%= row.Title %> </td>
+                    <td> <%= row.Description %></td>
+                    <td><%= row.Genre %></td>
+                    <td><%= row.Runtime %> minuty</td>
+                    <td><%= row.Year %></td>
+                    <td><a href="<%= row.Title %>">Pokaż szczegóły</a></td>
+                    <td class="tablebuttons" onclick="deleteMovie()"> Usuń</td>
+                </tr>
+            <% }); %>
+        <% } else{ %>
+            <h1>Nie znaleziono</h1>
+        <% } %>
+
+    </table>
+
+</div>
+</body>
+</html>

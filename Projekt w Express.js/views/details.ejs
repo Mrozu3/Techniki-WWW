@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>
+        Domowa baza filmowa - szczegóły
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+
+<h1> Domowa Baza Filmowa</h1>
+
+<div id="marginboxes">
+    <a class="movebuttons" href="/">Wróć</a>
+</div>
+
+<table id="moviestable">
+
+    <tr>
+        <th> Okładka</th>
+        <th> Tytuł</th>
+        <th> Opis</th>
+        <th> Gatunek</th>
+        <th> Rok produkcji</th>
+        <th> Czas trwania</th>
+        <th> Kategoria wiekowa</th>
+        <th> Ocena</th>
+        <th> Kraj produkcji</th>
+        <th> Budżet</th>
+        <th> Boxoffice</th>
+    </tr>
+
+    <% if(dane.length > 0){ %>
+        <% dane.forEach(function(row){ %>
+            <tr data-id="<%= row.id %>">
+                <td><img src="<%= row.cover %>" alt="<%= row.Cover %>"></td>
+                <td><%= row.title %> </td>
+                <td> <%= row.description %></td>
+                <td><%= row.genre %></td>
+                <td><%= row.year %></td>
+                <td><%= row.runtime %> minuty</td>
+                <td><%= row.certificate %></td>
+                <td><%= row.rating %></td>
+                <td><%= row.country %></td>
+                <td>$<%= row.budget %></td>
+                <td>$<%= row.boxoffice %></td>
+            </tr>
+        <% }); %>
+    <% } %>
+
+</table>
+
+</body>
+</html>
+
+

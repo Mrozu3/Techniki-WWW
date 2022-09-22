@@ -1,0 +1,134 @@
+body {
+    padding: 3%;
+    font: 100% "Arial";
+    background-image: url("../images/bg.jpg");
+    background-repeat: repeat;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 800;
+}
+
+#marginboxes {
+    display: inline-block;
+    text-align: left;
+    margin: 1%;
+}
+
+.textfield {
+    color: darkred;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #CCCCCC;
+}
+
+#addbutton {
+    display: inline-block;
+    margin: 1% 1% 1% 61.8%;
+}
+
+.movebuttons {
+    color: darkred;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: #EEEEEE;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+.movebuttons:hover {
+    background-color: #FFFFFF;
+}
+
+#addboxes {
+    display: inline-block;
+    text-align: center;
+    margin: 1% 1% 1% 41%;
+}
+
+.textfieldadd {
+    display: block;
+    color: darkred;
+    font-weight: bold;
+    font-size: 150%;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #CCCCCC;
+}
+
+
+/* Tabela */
+img {
+    width: 100px;
+    border-style: groove;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+.tablebuttons {
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.tablebuttons:hover, .tablebuttons:active {
+    background-color: #FFFFFF;
+    color: darkred;
+}
+
+.tablebuttons:active {
+    opacity: .5;
+}
+
+#moviestable {
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bolder;
+}
+
+#moviestable th {
+    font-size: 120%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: darkred;
+    color: white;
+}
+
+#moviestable td, #moviestable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#moviestable tr:nth-child(even) {
+    background-color: rgba(110, 110, 120, 0.30);
+}
+
+#moviestable tr:nth-child(odd) {
+    background-color: rgba(100, 100, 100, 0.30);
+}
+
+#moviestable tr:hover {
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+/* Koniec tabeli */

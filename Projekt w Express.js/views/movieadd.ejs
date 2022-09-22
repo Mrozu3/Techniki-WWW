@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>
+        Domowa baza filmowa - dodawanie
+    </title>
+    <link rel='stylesheet' href='stylesheets/style.css'/>
+</head>
+<body>
+
+<h1> Domowa Baza Filmowa</h1>
+<h2> Uzupełnij dane </h2>
+
+<div id="addboxes">
+    <form action="/movies" method="post">
+        <label>
+            <input class="textfieldadd" placeholder="Okładka URL" name="cover">
+            <input class="textfieldadd" placeholder="Tytuł" name="title">
+            <input class="textfieldadd" placeholder="Opis" name="description">
+            <input class="textfieldadd" placeholder="Rok" name="year">
+            <input class="textfieldadd" placeholder="Gatunek" name="genre">
+            <input class="textfieldadd" placeholder="Czas trwania" name="runtime">
+        </label>
+        <div id="marginboxes">
+            <a class="movebuttons" href="/">Wróć</a>
+            <input class="movebuttons" type="submit" value="Dodaj">
+        </div>
+    </form>
+
+</div>
+
+
+</body>
+</html>
