@@ -1,0 +1,1 @@
+Prosta responsywna strona WWW wykorzystująca wyłącznie CSS + HTML.
